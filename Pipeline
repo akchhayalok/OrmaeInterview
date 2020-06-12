@@ -1,0 +1,14 @@
+pipeline {
+    stages {
+        stage("Build") {
+            steps {
+                # Write here steps to build certain programs
+                echo "Building your program. Please wait"
+                pyinstaller --onefile main.py
+                cd dist
+                ls -la
+                echo "These are the files present in this directory after building your project"
+            }
+        }
+    }
+}

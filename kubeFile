@@ -1,0 +1,3 @@
+kubectl create namespace staging
+kubectl create namespace canary
+kubectl create namespace production
